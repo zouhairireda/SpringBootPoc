@@ -1,12 +1,16 @@
 package pocs.runner;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
-import pocs.rest.Example;
-
+@SpringBootApplication
+@ComponentScan(basePackages="pocs.process")
 public class SpringWebApplication {
-	
+
 	public static void main(String[] args) {
-		SpringApplication.run(Example.class, args);
+		ApplicationContext ctx = SpringApplication.run(SpringWebApplication.class, args);
+
 	}
 }

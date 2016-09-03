@@ -1,0 +1,9 @@
+logging.level:
+    org.jdev2015: DEBUG
+    org.springframework: INFO
+    
+files:
+    base: D:/
+    in: ${files.base}in
+    pattern: PrixCarburants_annuel_*.xml
+    done: done
