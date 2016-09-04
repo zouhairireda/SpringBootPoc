@@ -3,7 +3,7 @@ logging.level:
     org.springframework: INFO
     
 files:
-    base: D:/
+    base: D:/pocs/
     in: ${files.base}in
     pattern: PrixCarburants_annuel_*.xml
-    done: done
+    done: ${files.base}done
