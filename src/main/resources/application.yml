@@ -13,3 +13,6 @@ price.filter:
         - bordeaux
         - paris
         - lille
+        
+spring.data.mongodb:
+    database: jdev
