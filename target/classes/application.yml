@@ -1,5 +1,4 @@
 logging.level:
-    org.jdev2015: DEBUG
     org.springframework: INFO
     
 files:
@@ -7,3 +6,10 @@ files:
     in: ${files.base}in
     pattern: PrixCarburants_annuel_*.xml
     done: ${files.base}done
+    
+price.filter:
+    cities:
+        - toulouse
+        - bordeaux
+        - paris
+        - lille
